@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="css/Style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!--Menu navegador-->
+<div  class="mnav">
+	<nav> 
+	
+		<ul class="mnav__enlaces">
+			<div> <li> <a  href="Bijou.html"> Bijou</a> </li> </div>
+			 <div> <li> <a  href="Decoracion.html"> Decoracion </a> </li> </div>
+				   
+			<div> <li> <a  href="Nosotras.html"> Nosotras </a></li> </div>
+			<div> <li> <a  href="Contacto.html"> Contacto </a></li> </div>
+			   <div> <li> <a  href="Contacto.html"> Tienda Online </a></li> </div>
+		   </ul>
+
+	</nav>
+</div>
+</header>
+
+<!--encabezado contacto-->
+		<div class="encabezadoseccion">
+			<p> CONTACTO </p>
+		</div>
+</header>
+
+<main> 
+	<h1> Dejanos tu consulta </h1>
+<!-- formulario-->
+	<div class="contenedorformulario"> 
+	<form action="enviar.php" method="POST" enctype="multipart/form-data"  > 
+		<fieldset >	
+		<legend> Completa con tus datos y la brevededad nos comunicaremos</legend>	
+			<label for="Nombre"> Nombre </label>
+				<input type="text" name="Nombre" maxlength="100">
+			<br>
+			<label for="telefono"> Numero de telefono </label>
+				<input type="text" name="telefono" maxlength="50">
+			<br>
+			<label for="email"> Direccion de correo electronico </label>
+				<input type="text" name="email" maxlength="100">
+			<br>
+			<textarea> Mensaje </textarea>
+			<br>
+			<label> Me interesa </label>		
+				<select name="Deco_accesorios">
+					<option value="Accesorios"> Accesorios </option>
+					<option value="Decoracion"> Decoracion </option>
+					<option value="ambos"> Ambos </option>
+				</select>
+			<br>
+			<label> Quiero comprar por mayor </label>
+				<input type="checkbox" name="Mayorista" value="1">
+			<br>
+				<input type="submit" name="submit" value="Enviar" class="boton">
+				<input type="reset" value="Limpiar" class="boton"/>
+		</fieldset>
+	</form>
+	</div>
+<!-- termina formulario -->
+</main>
+   
+
+</body>
+</html>
