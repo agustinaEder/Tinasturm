@@ -25,21 +25,20 @@ body {
 }
 .mnav{
 	
-    padding: 0px;
     background-color:black; 
     justify-content: space-between;
 	width: 100%;
 	display: flex inline-block;
 	flex-wrap: wrap;
 	flex-direction: row;
-	font-family: 'Anonymous Pro', monospace;
+	
 	text-align: center;
 }
 
 
 .mnav__enlaces > div, ul, a{
     
-    padding: 0%;
+   
     border-right: none;
     overflow: hidden;
     background-color: black;
@@ -54,7 +53,8 @@ body {
 
     font-size: 20px;
     color: white;
-	
+ 	font-family: 'Cutive Mono', monospace;
+
 }
 
 nav ul li a:hover {
