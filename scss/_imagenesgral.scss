@@ -1,0 +1,27 @@
+
+
+/* grid fotos index */
+
+.gridFotos { 
+    display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 100%;
+	text-align: center;
+	background-color:#f2efe8;
+	width: 100%;
+    justify-content: space-between;
+
+        div, img {
+        width: 100%;
+        object-fit: cover;
+        align-items: center;
+        display: grid;
+        }
+              
+                img {
+                    &:hover {
+                    transform: scale(1.1);
+                    transition-duration: 3s;
+                    }
+                }
+}

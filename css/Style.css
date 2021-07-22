@@ -1,219 +1,66 @@
-
-*{ 
-margin: 10px;
-padding: 0;
-
- }
-
-
-h1{ 
-color: black;
-
-
-font-weight: 100;
-justify-content: center;
-text-align: center;
- }
-
-h2{
+.menunav {
+  background-color: black;
+  justify-content: space-between;
+  width: 100%;
+  display: flex inline-block;
+  flex-wrap: wrap;
+  flex-direction: row;
   text-align: center;
 }
-
-body {
-    font-family: 'DM Sans', sans-serif;
-
+.menunav div, .menunav ul, .menunav a {
+  border-right: none;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center space-between;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "Cutive Mono", monospace;
 }
-.mnav{
-	
-    background-color:black; 
-    justify-content: space-between;
-	width: 100%;
-	display: flex inline-block;
-	flex-wrap: wrap;
-	flex-direction: row;
-	
-	text-align: center;
-}
-
-
-.mnav__enlaces > div, ul, a{
-    
-   
-    border-right: none;
-    overflow: hidden;
-    background-color: black;
-	display: inline-block;
-	flex-direction: row;
-	justify-content: center;
-
-	position: relative;
-	
-	text-decoration: none;
-	text-align: center;
-
-    font-size: 20px;
-    color: white;
- 	font-family: 'Cutive Mono', monospace;
-
+.menunav div:hover, .menunav ul:hover, .menunav a:hover {
+  text-decoration: underline;
+  color: beige;
 }
 
-nav ul li a:hover {
-	text-decoration: underline;
-
-}
-.encabezadoseccion{
-	display: flex;
-   width: 100%;
-   font-family: 'Poppins', sans-serif;
-	margin: 0%;
-	font-size: 30px;
-   
-	color:black;
-	background-color: #f2efe8;
-	padding: 1px;
-	border: none;
-	align-items: center;
-	justify-content: center;
-   }
-
-/* seccion 1 index*/
-
-.titulosecciones{
-text-align: center;
-border-color: #FFF5DC;
-border-radius: 5px;
-font-size: 30px;
-width: relative;
-
+.encabezadoseccion {
+  display: flex;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  font-size: 30px;
+  color: black;
+  background-color: #f2efe8;
+  padding: 1px;
+  border: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.TextoSecciones{
-text-align: center;
-font-family: 'Source Code Pro', monospace;
-font-weight: normal;
-border: none;
-background-color:rgb(243, 210, 216);
+/* grid fotos index */
+.gridFotos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+  text-align: center;
+  background-color: #f2efe8;
+  width: 100%;
+  justify-content: space-between;
+}
+.gridFotos div, .gridFotos img {
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+  display: grid;
+}
+.gridFotos img:hover {
+  transform: scale(1.1);
+  transition-duration: 3s;
 }
 
-.GridContainerIndex1 {    
-    display: grid;
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 100%;
-	text-align: center;
-	background-color:#f2efe8;
-	width: 100%;
+/* variables */
 
-	justify-content: space-between;
-
-
-} 
-.GridContainerIndex1 > div, img {
-	width: 100%;
-	object-fit: cover;
-	align-items: center;
-	display: grid;
-
-
-}
-
-/* secciones decoracion */
-.section{
-	display: grid;
-	
-}
-
-.gridContainerMates{
-	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 80% 20%;
-	text-align: center;
-	background-color:#f2efe8;
-	width: 100%;
-	padding: 10px;
-	margin: 0%;
-	
-
-}
-.gridContainerMates__img{
-	width: 100%;
-	object-fit: cover;
-	align-items: center;
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pieDePag{
-	display: flex;
-	width: 100%;
-    background-color:rgb(242, 222, 225);
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-	
-
-.pieDePag__titulo{ 
-
-}
-
-
-
-
-
-/* seccion contacto */
-.contenedorformulario{
-
-	border-radius: 15px;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	position: relative;
-	margin-bottom: 50px;
-
-}
-
-
-.boton {
-	border: none;
-	min-width: 180px;
-	height: 50px;
-	padding: 0 30px;
-	background: #000;
-	color: black;
-	display: inline-block;
-	border-radius: 100px;
-	text-decoration: none;
-	display: inline-flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #d5afac;
-	transition: .3s ease all;
-}
-.boton:hover {
-	background: #f2efe8;
-	text-decoration: none;
-}
-
-@media screen and (min-width: 768px) { 
-	
-}
-
-
-img:hover{
-	transform: scale(1.1);
-	transition-duration: 3s;
-}
+/*# sourceMappingURL=Style.css.map */
