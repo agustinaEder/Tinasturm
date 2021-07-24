@@ -62,5 +62,30 @@
 }
 
 /* variables */
+/* secciones */
+nav {
+  width: 0px, 8;
+}
+
+h2 {
+  height: relative;
+  width: 1250px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  background-color: #f4dfe2;
+  font-family: "Anonymous Pro", monospace;
+}
+
+h1 {
+  font-family: "Beth Ellen", cursive;
+  font-size: 35px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  width: relative;
+}
+
+/*media*/
 
 /*# sourceMappingURL=Style.css.map */
