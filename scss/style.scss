@@ -3,6 +3,7 @@
 @import 'encabezadoseccion';
 @import 'imagenesgral';
 @import 'mixin';
+@import 'nosotras';
 
 
 
@@ -13,14 +14,14 @@
 
 $font-general: 20px; 
 $font-fam-general: 'DM Sans', sans-serif;
-$font-fam-mono: 'Anonymous Pro', monospace;
+$font-fam-mono: 'Anonymous Pro', monospace;;
 $font-fam-cursiva: 'Beth Ellen', cursive;
 $padding-general: 0;
 $margin-general: 10px;
 $clarito: #FEECDA;
 $blanquito: #ede8e6;
 $rosita: #f4dfe2;
-$pistacho: #flebe9;
+
 
 
 $medida-ancho: 1250px;

@@ -1,0 +1,51 @@
+.parrafo{
+    font-family: 'DM Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.gridTaller1{
+
+display: grid;
+grid-template-columns: 40% 60%;
+grid-template-rows: 100%;
+width: 100%;
+justify-content: space-between;
+
+    div, img {
+    width: relative;
+    height: relative;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    text-align: center;
+
+    }
+    p {
+        background-color: #f4dfe2;
+        font-size: x-large;
+        font-family: 'Beth Ellen', cursive;
+    }
+}
+
+.gridTaller2{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    justify-content: space-between;
+  
+    
+        div, img {
+        width: relative;
+        height: relative;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        object-fit: cover;    
+        }
+
+
+}

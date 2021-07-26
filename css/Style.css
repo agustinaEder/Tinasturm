@@ -3,7 +3,6 @@
   justify-content: space-between;
   width: 100%;
   display: flex inline-block;
-  flex-wrap: wrap;
   flex-direction: row;
   text-align: center;
 }
@@ -11,7 +10,7 @@
   border-right: none;
   overflow: hidden;
   background-color: black;
-  display: inline-block;
+  display: row;
   flex-direction: row;
   justify-content: center space-between;
   position: relative;
@@ -59,6 +58,49 @@
 .gridFotos img:hover {
   transform: scale(1.1);
   transition-duration: 3s;
+}
+
+.parrafo {
+  font-family: "DM Sans", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gridTaller1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+.gridTaller1 div, .gridTaller1 img {
+  width: relative;
+  height: relative;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  text-align: center;
+}
+.gridTaller1 p {
+  background-color: #f4dfe2;
+  font-size: x-large;
+  font-family: "Beth Ellen", cursive;
+}
+
+.gridTaller2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+.gridTaller2 div, .gridTaller2 img {
+  width: relative;
+  height: relative;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  object-fit: cover;
 }
 
 /* variables */

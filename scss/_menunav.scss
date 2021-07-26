@@ -4,9 +4,11 @@
     justify-content: space-between;
 	width: 100%;
 	display: flex inline-block;
-	flex-wrap: wrap;
+	
 	flex-direction: row;
 	text-align: center;
+
+
 
     
     div, ul, a {
@@ -14,7 +16,7 @@
     border-right: none;
     overflow: hidden;
     background-color: black;
-	display: inline-block;
+	display: row;
 	flex-direction: row;
 	justify-content: center space-between;
 
