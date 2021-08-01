@@ -3,79 +3,104 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contacto</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/Style.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!--fuentes-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
     	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
+		<title>Contacto</title>
+	<!--meta etiquetas seo-->
+	<meta name="description" content="Conectá con nosotras y recibí informacion para comprar por mayor">
+	<meta name="keywords" content="Accesorios por mayor, bijou por mayor, aros por mayor, mates por mayor, fabricante velas, mates pintados">
+	<title> Contacto |Tina Sturm Accesorios </title>
 
 
 </head>
 
-<body>
 
-<header>
+<body>
+	<header>
+<!-- imagen encabezado-->
+		<img src="imagenes/imagenhead.jpg" alt="imagen encabezado con logo y slogan de la marca" class="imglogo">
 
 <!--Menu navegador-->
-  <div  class="mnav">
-    <nav> 
-      <div> 
-        <ul class="mnav__enlaces">
-        <div> <li> <a  href="index.html"> Inicio</a> </li> </div>
-        <div> <li> <a  href="Bijou.html"> Bijou</a> </li> </div>
-        <div> <li> <a  href="Decoracion.html"> Decoracion </a> </li> </div>
-        <div> <li> <a  href="Nosotras.html"> Nosotras </a></li> </div>
-        <div> <li> <a  href="Contacto.html"> Contacto </a></li> </div>
-        <div> <li> <a  href="Contacto.html"> Tienda Online </a></li> </div>
-        </ul> 
-      </div>
-  
-    </nav>
-  </div>
-
+	<ul class="nav nav-pills nav-fill menunav">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Inicio</a>
+		  </li>
+		<li class="nav-item">
+		  <a class="nav-link" href="Bijou.html">Bijou</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="Decoracion.html">Decoración </a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="Nosotras.html">Nosotras</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="Contacto">Tienda Online</a>
+		  </li>
+	  </ul>
+<br>
+ 
 <!--encabezado contacto-->
 	<div class="encabezadoseccion">
-			<p> CONTACTO </p>
+			<h1> Contacto </h1>
 	</div>
 </header>
 
 <main> 
-	<h1> Dejanos tu consulta </h1>
+	
 <!-- formulario-->
-	<div class="contenedorformulario"> 
-	<form action="enviar.php" method="POST" enctype="multipart/form-data"  > 
-		<fieldset >	
-		<legend> Completa con tus datos y la brevededad nos comunicaremos</legend>	
-			<label for="Nombre"> Nombre </label>
-				<input type="text" name="Nombre" maxlength="100">
+<br>	
+		<div class="contenedorgral"> 
+			<div class="contenedorformulario">
+			 <form action="enviar.php" method="POST" enctype="multipart/form-data" > 
+				<fieldset>
+					<legend class="legend"> Completa con tus datos y la brevededad nos comunicaremos</legend>	
+						<p> <label for="Nombre"> Nombre </p>
+							<input type="text" name="Nombre" maxlength="100">
+			
+						<p><label for="telefono"> Numero de telefono </label></p>
+							<input type="text" name="telefono" maxlength="50">
+			
+						<p><label for="email"> Direccion de correo electronico </label></p>
+							<input type="text" name="email" maxlength="100">
+			
+						<p><label> Quiero comprar por mayor <input type="checkbox" name="Mayorista" value="1"></label> </p>
+							
+		
+						<textarea rows="4"> Escribe aquí tu mensaje </textarea>
+			
 			<br>
-			<label for="telefono"> Numero de telefono </label>
-				<input type="text" name="telefono" maxlength="50">
-			<br>
-			<label for="email"> Direccion de correo electronico </label>
-				<input type="text" name="email" maxlength="100">
-			<br>
-			<textarea> Mensaje </textarea>
-			<br>
-			<label> Me interesa </label>		
-				<select name="Deco_accesorios">
-					<option value="Accesorios"> Accesorios </option>
-					<option value="Decoracion"> Decoracion </option>
-					<option value="ambos"> Ambos </option>
-				</select>
-			<br>
-			<label> Quiero comprar por mayor </label>
-				<input type="checkbox" name="Mayorista" value="1">
-			<br>
-				<input type="submit" name="submit" value="Enviar" class="boton">
-				<input type="reset" value="Limpiar" class="boton"/>
-		</fieldset>
-	</form>
-	</div>
+						<input type="submit" name="submit" value="Enviar" class="boton">
+			
+						<input type="reset" value="Limpiar" class="boton"/>
+				</fieldset>
+			 </form>
+			</div>
 <!-- termina formulario -->
+<!--datos de contacto-->
+
+			<div class="contactoinfo"> 
+				<h2> Para más info </h2>
+					<ul>
+						<li> WP 3546437381</li>
+						<li> Chile 538, Villa General Belgrano, Córdoba</li>
+						<li> Seguinos en nuestras redes</li>
+						<li> IG Tinasturm__</li>
+						<li> FB Tina Sturm accesorios</li>
+					</ul>
+			</div>
+		</div>
+
+
+
 </main>
    
 

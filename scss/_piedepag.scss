@@ -1,0 +1,32 @@
+
+
+footer{
+    margin-top: 10px;
+}
+
+.piedepag{
+    background-color: #edf5e7;
+    width: 100%;
+    padding: 10px;
+}
+
+.blockpiedepag{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+   
+    
+}
+
+.columpiedepag{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-between;
+    text-align: center;
+}
+
+.firma{
+    text-align: center;
+    color: darkolivegreen;
+    
+}

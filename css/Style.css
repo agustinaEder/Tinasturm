@@ -1,42 +1,41 @@
+/* menu index*/
 .menunav {
-  background-color: black;
-  justify-content: space-between;
   width: 100%;
-  display: flex inline-block;
-  flex-direction: row;
-  text-align: center;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
 }
-.menunav div, .menunav ul, .menunav a {
-  border-right: none;
-  overflow: hidden;
-  background-color: black;
-  display: row;
-  flex-direction: row;
-  justify-content: center space-between;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
+.menunav ul, .menunav li, .menunav a {
+  background-color: #f2efe8;
+  display: inline-block;
   font-size: 20px;
-  color: white;
-  font-family: "Cutive Mono", monospace;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  align-content: space-between;
 }
-.menunav div:hover, .menunav ul:hover, .menunav a:hover {
-  text-decoration: underline;
-  color: beige;
+.menunav ul:hover, .menunav li:hover, .menunav a:hover {
+  background: #f4dfe2;
 }
 
 .encabezadoseccion {
   display: flex;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Anonymous Pro", monospace;
   margin: 0%;
   font-size: 30px;
   color: black;
-  background-color: #f2efe8;
-  padding: 1px;
+  background-color: #f4dfe2;
+  padding: 10px 10px;
   border: none;
   align-items: center;
   justify-content: center;
+}
+
+/*imagen encabezado logo*/
+.imglogo {
+  width: 100%;
 }
 
 /* grid fotos index */
@@ -103,31 +102,129 @@
   object-fit: cover;
 }
 
+.contenedorgral {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  align-content: space-between;
+  box-sizing: border-box;
+  padding: 5px;
+  max-width: 1000px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  box-shadow: 0 0 20px 0 #f4dfe2;
+}
+
+.contenedorformulario {
+  padding: 5px;
+}
+.contenedorformulario form, .contenedorformulario textarea, .contenedorformulario input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d5afac;
+  outline: 0;
+}
+
+.boton {
+  border: none;
+  margin-top: 10px;
+  height: 50px;
+  padding: 0 30px;
+  background: #000;
+  color: black;
+  border-radius: 100px;
+  text-decoration: none;
+  outline: 0;
+  background: #d5afac;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.boton:hover {
+  background: #f2efe8;
+  text-decoration: none;
+  outline: 0;
+}
+
+.legend {
+  font-family: "DM Sans", sans-serif;
+}
+
+/*contenedor de info */
+.contactoinfo {
+  /* background-color: #ede8e6; */
+  background-image: url "imagenes\contactoback.jpg";
+  display: grid;
+  margin-top: 10px;
+  padding: 0.5em;
+  align-content: flex-start;
+}
+.contactoinfo h2, .contactoinfo ul {
+  text-align: center;
+  justify-content: center;
+  display: grid;
+}
+.contactoinfo ul {
+  list-style: none;
+  padding: 5%;
+}
+
+/* pantalla grande */
+@media (min-width: 700px) {
+  .contenedorgral {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+footer {
+  margin-top: 10px;
+}
+
+.piedepag {
+  background-color: #edf5e7;
+  width: 100%;
+  padding: 10px;
+}
+
+.blockpiedepag {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.columpiedepag {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: space-between;
+  text-align: center;
+}
+
+.firma {
+  text-align: center;
+  color: darkolivegreen;
+}
+
 /* variables */
 /* secciones */
 nav {
-  width: 0px, 8;
+  width: 0px, 9;
 }
 
-h2 {
-  height: relative;
-  width: 1250px;
-  display: grid;
-  text-align: center;
-  align-items: center;
-  background-color: #f4dfe2;
-  font-family: "Anonymous Pro", monospace;
-}
+/*
+h2{
+    @include titulosSection(1250px, relative);
+}*/
+/*h1{
+    font-family: $font-fam-cursiva;
+    font-size: 35px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    width: relative;
 
-h1 {
-  font-family: "Beth Ellen", cursive;
-  font-size: 35px;
-  display: grid;
-  text-align: center;
-  align-items: center;
-  width: relative;
-}
 
+}*/
 /*media*/
 
 /*# sourceMappingURL=Style.css.map */

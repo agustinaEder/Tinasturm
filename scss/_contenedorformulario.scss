@@ -1,0 +1,84 @@
+
+.contenedorgral{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+  
+   
+    align-content: space-between;
+    box-sizing: border-box;
+    padding: 5px;
+    max-width: 1000px;
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    box-shadow: 0 0 20px 0 #f4dfe2;
+}
+
+.contenedorformulario{
+    padding: 5px;
+   
+    form, textarea, input{
+         
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #d5afac;;
+            outline: 0;
+
+    }
+}   
+.boton {
+	border: none;
+	margin-top: 10px;
+	height: 50px;
+	padding: 0 30px;
+	background: #000;
+	color: black;
+	border-radius: 100px;
+	text-decoration: none;
+	outline: 0;
+	background: #d5afac;
+	transition: .3s ease all;
+    text-transform: uppercase;
+}  
+.boton:hover {
+	background: #f2efe8;
+	text-decoration: none;  
+    outline: 0;
+    }
+    
+.legend{
+    font-family: 'DM Sans', sans-serif;
+} 
+
+/*contenedor de info */
+.contactoinfo{
+   /* background-color: #ede8e6; */
+    background-image: url ("imagenes\contactoback.jpg");
+    display: grid;
+    margin-top: 10px;
+    padding: .5em;
+    align-content: flex-start;
+    
+
+    h2, ul{
+           text-align: center;
+           justify-content: center;
+           display: grid;
+            
+    }
+            ul{
+            list-style: none;
+            padding: 5%;
+            }
+
+} 
+
+/* pantalla grande */ 
+@media (min-width: 700px) {
+    .contenedorgral {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}

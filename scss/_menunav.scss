@@ -1,38 +1,26 @@
-
+/* menu index*/
  .menunav {   
-    background-color:black; 
-    justify-content: space-between;
-	width: 100%;
-	display: flex inline-block;
-	
-	flex-direction: row;
-	text-align: center;
+ 
+   width: 100%;
+   display: flex;
+   align-content: space-between;
+   justify-content: center;
 
+    ul, li, a {
 
-
-    
-    div, ul, a {
-  
-    border-right: none;
-    overflow: hidden;
-    background-color: black;
-	display: row;
-	flex-direction: row;
-	justify-content: center space-between;
-
-	position: relative;
-	text-decoration: none;
-	text-align: center;
+    background-color: #f2efe8;
+	display: inline-block;
     font-size: 20px;
-    color: white;
- 	font-family: 'Cutive Mono', monospace;
+    color:black;
+ 	font-family: 'DM Sans', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	align-content: space-between;
 
+		&:hover {
+          background: #f4dfe2;
+            
 
-        &:hover {
-            text-decoration: underline;
-            color: beige;
-        }
- 	}
+ 		}
+	}
  }
-
-
