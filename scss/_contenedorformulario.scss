@@ -1,15 +1,13 @@
-
+/* seccion contacto*/
 .contenedorgral{
+    font-family: 'DM Sans', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100%;
-  
-   
     align-content: space-between;
     box-sizing: border-box;
     padding: 5px;
     max-width: 1000px;
-   
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
@@ -54,24 +52,22 @@
 
 /*contenedor de info */
 .contactoinfo{
-   /* background-color: #ede8e6; */
-    background-image: url ("imagenes\contactoback.jpg");
+    background-color: #ede8e6;
     display: grid;
     margin-top: 10px;
     padding: .5em;
     align-content: flex-start;
-    
-
-    h2, ul{
+    background-image: url(../imagenes/fondo.jpg);
+         h2, ul{
            text-align: center;
            justify-content: center;
            display: grid;
             
-    }
-            ul{
+         }
+        ul{
             list-style: none;
             padding: 5%;
-            }
+        }
 
 } 
 

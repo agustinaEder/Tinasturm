@@ -1,0 +1,61 @@
+.containertarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    padding: 20px;
+    box-sizing: border-box;
+   
+    gap: 10px;
+    
+    
+    .tarjeta {
+    box-shadow: 0px 4px 3px white;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(250, 242, 242); 
+    padding: 5px;
+
+    } 
+}
+
+.imgtarjeta {
+    display: block;
+    border-radius: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    
+        &:hover{
+        transform: rotateY(180deg);
+        }
+}
+
+
+.detalles {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    padding: 10px;
+        
+        .titulo{
+        font-family: 'Beth Ellen', cursive;
+        font-size: 20px;
+        }
+}
+
+
+ 
+ /*gradeinte rosa
+background: linear-gradient(to right, rgba(202, 149, 149, 0), rgb(255, 253, 253)); */
+
+/* pantalla celu y tablets */ 
+@media (max-width: 930px) {
+    .containertarjetas {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        position: relative;
+      
+        margin-left: auto;
+        margin-right: auto;
+     
+      
+    }
+}

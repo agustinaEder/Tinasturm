@@ -2,31 +2,28 @@
 
 footer{
     margin-top: 10px;
-}
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}   
 
 .piedepag{
-    background-color: #edf5e7;
+    background-color: #fbeeff;
     width: 100%;
-    padding: 10px;
-}
-
-.blockpiedepag{
     display: flex;
-    text-align: center;
     flex-direction: column;
-   
-    
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+
+        a {
+            text-decoration: none;
+            color: black;
+}
 }
 
-.columpiedepag{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: space-between;
-    text-align: center;
-}
 
 .firma{
-    text-align: center;
     color: darkolivegreen;
-    
+    padding: 10px;
 }

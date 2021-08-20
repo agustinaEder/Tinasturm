@@ -1,0 +1,68 @@
+.fondoacces {
+    background-image: url(../imagenes/fondo2.jpg);
+}
+
+.encabezadobijou {
+    
+    background-color: rgb(248, 242, 242, 0.5); 
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.contenedorgral {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.bijoubox {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    max-height: 500px;
+    position: relative;
+    transition: 2s ease all;
+
+        img{
+            box-shadow: 0px 4px 3px white;
+        }
+        img:hover {
+            transform: scale(1.1);
+            transition: 2s;
+            
+        }
+}
+
+/* pantalla tablet y cel */
+
+@media (max-width: 930px) {
+    .contenedorgral {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        gap: 10px;
+        
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+        .bijoubox{
+            padding: 5px;
+            max-height: 500px;
+            max-width: 300px;
+        }
+     
+      
+    }
+}

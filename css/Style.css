@@ -1,108 +1,236 @@
-/* menu index*/
 .menunav {
+  padding: 0%;
   width: 100%;
-  display: flex;
-  align-content: space-between;
-  justify-content: center;
-}
-.menunav ul, .menunav li, .menunav a {
-  background-color: #f2efe8;
-  display: inline-block;
-  font-size: 20px;
-  color: black;
-  font-family: "DM Sans", sans-serif;
-  text-decoration: none;
   list-style: none;
-  align-content: space-between;
+  background-color: #f2efe8;
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  box-shadow: 0px 4px 3px #fff8f9;
 }
-.menunav ul:hover, .menunav li:hover, .menunav a:hover {
-  background: #f4dfe2;
+.menunav nav, .menunav ul, .menunav li {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
+.menunav nav a, .menunav ul a, .menunav li a {
+  text-decoration: none;
+  color: black;
+  align-content: center;
+}
+.menunav nav:hover, .menunav ul:hover, .menunav li:hover {
+  background: #f7f7f6;
 }
 
+/*estilo menu nav para secciones que quede fixed*/
+.menunav1 {
+  margin-top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 0%;
+  width: 100%;
+  list-style: none;
+  background-color: #f2efe8;
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  box-shadow: 0px 4px 3px #fff8f9;
+}
+.menunav1 nav, .menunav1 ul, .menunav1 li {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
+.menunav1 nav a, .menunav1 ul a, .menunav1 li a {
+  text-decoration: none;
+  color: black;
+  align-content: center;
+}
+.menunav1 nav:hover, .menunav1 ul:hover, .menunav1 li:hover {
+  background: #f7f7f6;
+}
+
+/*estilo carrousel centrado*/
+.centrado {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* palabra sola en el inicio del html*/
 .encabezadoseccion {
   display: flex;
   width: 100%;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Special Elite", cursive;
+  font-weight: 100;
   margin: 0%;
-  font-size: 30px;
   color: black;
   background-color: #f4dfe2;
   padding: 10px 10px;
   border: none;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-/*imagen encabezado logo*/
-.imglogo {
-  width: 100%;
-}
-
-/* grid fotos index */
-.gridFotos {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100%;
-  text-align: center;
-  background-color: #f2efe8;
-  width: 100%;
-  justify-content: space-between;
-}
-.gridFotos div, .gridFotos img {
-  width: 100%;
-  object-fit: cover;
-  align-items: center;
-  display: grid;
-}
-.gridFotos img:hover {
-  transform: scale(1.1);
-  transition-duration: 3s;
-}
-
-.parrafo {
-  font-family: "DM Sans", sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.gridTaller1 {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 100%;
-  width: 100%;
-  justify-content: space-between;
-}
-.gridTaller1 div, .gridTaller1 img {
-  width: relative;
-  height: relative;
-  justify-items: center;
-  align-items: center;
-  display: grid;
-  text-align: center;
-}
-.gridTaller1 p {
-  background-color: #f4dfe2;
-  font-size: x-large;
+/*titulos y texto de cada seccion index*/
+.tit h1 {
   font-family: "Beth Ellen", cursive;
 }
 
-.gridTaller2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
-  width: 100%;
-  justify-content: space-between;
-}
-.gridTaller2 div, .gridTaller2 img {
-  width: relative;
-  height: relative;
-  justify-items: center;
+.titulosecciones {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
   align-items: center;
-  display: grid;
-  object-fit: cover;
+  padding: 5px;
+  width: 100%;
+  background-color: #fdfbf1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+.titulosecciones h2, .titulosecciones p {
+  text-align: center;
+  padding: 5px;
+  font-weight: 300;
 }
 
+.contenedorindex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.fotoindex {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0px 4px 3px white;
+}
+.fotoindex img {
+  width: 100%;
+}
+
+.capaindex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(241, 240, 231, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: scale(0);
+  transition: 0.8s ease;
+  font-family: "Special Elite", cursive;
+  font-weight: 200;
+  padding: 5px;
+}
+
+.fotoindex:hover .capaindex {
+  transform: scale(1);
+}
+
+/* pantalla chica */
+@media (max-width: 920px) {
+  .contenedorindex {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .contenedorindex .fotoindex {
+    max-height: 500px;
+    max-width: 400px;
+  }
+}
+.tit {
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.fondonosotras {
+  background-image: url(../imagenes/ds.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: auto;
+}
+
+/*texto quienes somos*/
+.presentacion {
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px;
+  background-color: #ede8e6;
+  top: 600px;
+  position: absolute;
+}
+.presentacion p {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.presentacion .boxtaller {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px;
+  text-align: center;
+  justify-items: center;
+  position: relative;
+  background-color: #ede8e6;
+}
+.presentacion .boxtaller div, .presentacion .boxtaller img {
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  object-fit: cover;
+  display: grid;
+}
+.presentacion .boxtaller p {
+  background-color: white;
+  border-style: solid 1;
+  font-size: x-large;
+  font-family: "Beth Ellen", cursive;
+  padding: 5px;
+}
+.presentacion .imgredonda {
+  width: 300px;
+  height: 300px;
+  border-radius: 180px;
+}
+
+@media (max-width: 850px) {
+  .boxtaller {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* seccion contacto*/
 .contenedorgral {
+  font-family: "DM Sans", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100%;
@@ -153,12 +281,12 @@
 
 /*contenedor de info */
 .contactoinfo {
-  /* background-color: #ede8e6; */
-  background-image: url "imagenes\contactoback.jpg";
+  background-color: #ede8e6;
   display: grid;
   margin-top: 10px;
   padding: 0.5em;
   align-content: flex-start;
+  background-image: url(../imagenes/fondo.jpg);
 }
 .contactoinfo h2, .contactoinfo ul {
   text-align: center;
@@ -179,52 +307,141 @@
 }
 footer {
   margin-top: 10px;
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
 }
 
 .piedepag {
-  background-color: #edf5e7;
+  background-color: #fbeeff;
   width: 100%;
-  padding: 10px;
-}
-
-.blockpiedepag {
   display: flex;
-  text-align: center;
   flex-direction: column;
-}
-
-.columpiedepag {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-content: space-between;
+  padding: 10px;
   text-align: center;
+  justify-content: center;
+}
+.piedepag a {
+  text-decoration: none;
+  color: black;
 }
 
 .firma {
-  text-align: center;
   color: darkolivegreen;
+  padding: 10px;
 }
 
-/* variables */
-/* secciones */
-nav {
-  width: 0px, 9;
+.fondo {
+  background-image: url(../imagenes/fondo1.jpg);
 }
 
-/*
-h2{
-    @include titulosSection(1250px, relative);
-}*/
-/*h1{
-    font-family: $font-fam-cursiva;
-    font-size: 35px;
+.containertarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.containertarjetas .tarjeta {
+  box-shadow: 0px 4px 3px white;
+  border-radius: 20px;
+  position: relative;
+  background-color: #faf2f2;
+  padding: 5px;
+}
+
+.imgtarjeta {
+  display: block;
+  border-radius: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.imgtarjeta:hover {
+  transform: rotateY(180deg);
+}
+
+.detalles {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.detalles .titulo {
+  font-family: "Beth Ellen", cursive;
+  font-size: 20px;
+}
+
+/*gradeinte rosa
+background: linear-gradient(to right, rgba(202, 149, 149, 0), rgb(255, 253, 253)); */
+/* pantalla celu y tablets */
+@media (max-width: 930px) {
+  .containertarjetas {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.fondoacces {
+  background-image: url(../imagenes/fondo2.jpg);
+}
+
+.encabezadobijou {
+  background-color: rgba(248, 242, 242, 0.5);
+  box-sizing: border-box;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.contenedorgral {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.bijoubox {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  max-height: 500px;
+  position: relative;
+  transition: 2s ease all;
+}
+.bijoubox img {
+  box-shadow: 0px 4px 3px white;
+}
+.bijoubox img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+/* pantalla tablet y cel */
+@media (max-width: 930px) {
+  .contenedorgral {
     display: grid;
-    text-align: center;
-    align-items: center;
-    width: relative;
-
-
-}*/
-/*media*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contenedorgral .bijoubox {
+    padding: 5px;
+    max-height: 500px;
+    max-width: 300px;
+  }
+}
+body {
+  padding: 0%;
+}
 
 /*# sourceMappingURL=Style.css.map */
